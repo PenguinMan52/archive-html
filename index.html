@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Below is the typical setup for making today's modern webpages -->
+    <!-- All of this is Internal CSS and is only used to tell the browser how to render your file -->
+    <meta charset="UTF-8">
+    <!-- Makes this site responsive on phones -->
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <!-- Page title (shows in browser tab) -->
+    <title>Archive HTML</title>
+    <!-- Optional description for search engines -->
+    <meta name="description" content="Introduction to HTML as a web markup language. We will explain how to style documents with CSS in coming lesson plans.">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="HTMLintro.css">
+  </head>
+  <!-- Everything inside the body tag is rendered content -->
+  <body>
+    <!-- Main is used to contain "What is this page for?" Typically most content lives here. -->
+    <main>
+      <!-- Main purpose does not mean only content. It can be broken into sections, or an article with 1-2 additional sections (in that case the sections should rely on the article to make sense/exist). -->
+      <section class="lesson-material">
+        <h1 class="intro">What is HTML?</h1>
+        <p class="theory-explanation">Html is a hypertext markup language. To oversimplify, it can be considered the backbone that all other web development languages sit on. The main thing you need to know is that it follows a specific structure that must be adhered to.</p>
+        <h4>Here are a few of the things you'll learn in this course:</h4>
+        <div>
+          <ul id="learning-path">
+            <li class="stone">Document Structure</li>
+            <li class="stone">Layout Tags</li>
+            <li class="stone">Text Tags</li>
+            <li class="stone">Lists</li>
+            <li class="stone">Forms</li>
+            <li class="stone">Tables</li>
+            <li class="stone">Media</li>
+            <li class="stone">Links</li>
+            <li class="stone">Misc. Secrets</li>
+          </ul>
+        </div>
+        <p class="theory-explanation">Sounds like a lot right? We're gonna make this simple by starting from structure down. To begin with, I'm going to explain what exactly we're doing here and how to get started.</p>
+        <p>Before learning the language, you need to know that web pages are just files talking to files (yes, i mean the files you already look at on your computer every day). Even this lesson plan is just a folder of files:</p>
+        <img src="C:\GlobalArchive\Filesarefiles.png">
+        <details>
+          <summary>Learn how to open an html document</summary>
+          <h3>What is an IDE</h3>
+          <p>Before learning the language, you should first know how to install the tools you need. Later we will revisit tools at the end but for now I ask that you install VS Code (Visual Studio Code) as outlined in lesson 2 to have your own IDE (Integrated Development Environment). It's here where you'll be able to follow along the lessons and eventually experiment on your own.</p>
+        </details>
+      </section>
+      <section class="quiz">
+        <div class="q1">
+          <h2 class="q-name">What is HTML?</h2>
+          <label>
+            <input type="radio" name="q1" value="a">
+            A styling language used to color, style and animate websites.
+          </label>
+          <label>
+            <input type="radio" name="q1" value="b">
+            A programming language used to control logic, calculations, and server behavior.
+          </label>
+          <label>
+            <input type="radio" name="q1" value="c">
+            A hyper text markup language that defines the structure of webpages.
+          </label>
+          <label>
+            <input type="radio" name="q1" value="d">
+            A hosting environment that allows the deployment of web pages.
+          </label>
+        </div>
+        <div class="q2">
+          <h2 class="q-name">Where do you type html?</h2>
+          <label>
+            <input type="radio" name="q2" value="a">
+            Hosting Environment
+          </label>
+          <label>
+            <input type="radio" name="q2" value="b">
+            Development Environment
+          </label>
+          <label>
+            <input type="radio" name="q2" value="c">
+            Back-end Environment
+          </label>
+          <label>
+            <input type="radio" name="q2" value="d">
+            A computer BIOS menu
+          </label>
+        </div>
+        <div class="q3">
+          <h2 class="q-name">What are you about to learn?</h2>
+          <label>
+            <input type="radio" name="q3" value="a">
+            How to build files
+          </label>
+          <label>
+            <input type="radio" name="q3" value="b">
+            Back-end Development
+          </label>
+          <label>
+            <input type="radio" name="q3" value="c">
+            The structure of documents
+          </label>
+          <label>
+            <input type="radio" name="q3" value="d">
+            How to install an IDE
+          </label>
+        </div>
+        <div class="done">
+          <button type="button" class="retry">Retry</button>
+          <button type="button" class="finished">Finish</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
