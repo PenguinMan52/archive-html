@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     gap: 1vw;
-    align-items: flex-start;
   }
   body {
     background-color: rgba(40, 40, 40, 0.1);
@@ -55,3 +54,4 @@
     text-align: center;
   }
 }
+
