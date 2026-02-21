@@ -32,7 +32,7 @@
     font-weight: 500;
     text-shadow: 2px 3px 1px rgba(180, 180, 180, 0.4);
   }
-  .theory-explanation: {
+  .theory-explanation {
     display: inline-block;
   }
   .quiz {
@@ -54,4 +54,5 @@
     text-align: center;
   }
 }
+
 
