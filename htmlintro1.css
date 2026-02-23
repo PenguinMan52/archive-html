@@ -1,64 +1,219 @@
-@media (min-width: 400px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;
-  }
+body {
+  background-color: rgba(30, 110, 200, 0.48);
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.03rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.lesson1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(120, 140, 180, 0.2);
+  border: 3px solid rgba(100, 120, 160, 0.4);
+  border-radius: 1%;
+}
+.lesson1 .lesson-material {
+  display: flex;
+  flex-direction: column;
+}
+.lesson1 .lesson-material h1 {
+  font-size: 1.6em;
+  position: relative;
+  top: 10px;
+  left: 2px;
+}
+.lesson1 .lesson-material h4 {
+  box-sizing: border-box;
+  padding: 0px 2vw;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.lesson1 .lesson-material .theory-explanation {
+  font-size: 0.9rem;
+  padding: 1px 3px;
+}
+.lesson1 .lesson-material #learning-path {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: -10%;
+}
+.lesson1 .lesson-material #learning-path .stone {
+  list-style: upper-roman;
+  list-style-position: inside;
+  text-shadow: 2px 4px 3px rgba(80, 80, 80, 0.6);
+}
+.lesson1 .lesson-material img {
+  max-height: 15vh;
+  max-width: 100vw;
+  object-fit: contain;
+}
+.lesson1 .lesson-material details summary {
+  list-style-position: inside;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2vh 0vw;
+}
+.lesson1 .lesson-material details h3 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+  left: -10vw;
+  top: -2vh;
+}
+.lesson1 .lesson-material #takequiz {
+  display: none;
+}
+.lesson1 .quiz {
+  display: flex;
+  flex-direction: column;
+}
+.lesson1 .quiz .q-name {
+  font-size: 1em;
+  padding: 0 2vw;
+}
+.lesson1 .quiz label {
+  display: block;
+  margin: 1vh 2vw;
+  font-size: 0.85rem;
+}
+.lesson1 .quiz .done {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.lesson1 .quiz .done .retry {
+  box-sizing: border-box;
+  margin: 0 3vw;
+}
+.lesson1 .quiz .done .retry:hover {
+  color: blue;
+  cursor: pointer;
+}
+.lesson1 .quiz .done .finish:hover {
+  color: blue;
+  cursor: pointer;
+}
+@media (min-width: 380px) and (max-width: 599px) {
   body {
-    background-color: rgba(40, 40, 40, 0.1);
+    background-color: rgba(2, 0, 8, 0.95);
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.04rem;
+    margin: 2vh 2vw 3vh 2vw;
+    border: 1px solid rgba(130, 130, 130, 0.3);
   }
-  img {
-    height: 10vh;
-    width: 60vw;
-    object-fit: contain;
-  }
-  .lesson-material { 
-    flex: 1;
-    background-color: rgba(180, 180, 180, 0.1);
+  .lesson1 {
     display: flex;
     flex-direction: column;
-    padding: 0% 2vw 0% 2vw;
-    overflow-y: auto;
-    height: 97vh;
+    color: rgba(200, 200, 200, 0.95);
+    background-color: rgba(40, 50, 80, 0.5);
+    border: none;
+    border-radius: 0%;
+    padding: 0px 0vw;
   }
-  .quiz { flex: 1; }
-  .lesson-material .intro {
-    text-align: center;
-    position: relative;
+  .lesson1 .lesson-material .intro {
+    padding: 0 2%;
+    font-size: 1.7rem;
+    margin: 2vh 0;
   }
-  .lesson-material details summary:hover {
-    cursor: pointer;
+  .lesson1 .lesson-material .theory-explanation {
+    background-color: rgba(5, 2, 12, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2% 2%;
+    font-size: 0.9rem;
+    max-width: 98%;
+    box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.7);
+    margin: 1vh 0;
   }
-  #learning-path {
-    list-style: upper-roman;
-    list-style-position: inside;
+  .lesson1 .lesson-material div {
+    background-color: rgba(5, 2, 12, 0.2);
+    box-sizing: border-box;
+    padding: 0 0 0 3vw;
+    box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.7);
+    margin: 1vh 0 2vh 0;
   }
-  .stone {
+  .lesson1 .lesson-material #learning-path .stone {
+    font-size: 0.9rem;
+    text-shadow: 5px 5px 0px rgba(20, 10, 10, 0.9);
     font-weight: 500;
-    text-shadow: 2px 3px 1px rgba(180, 180, 180, 0.4);
   }
-  .theory-explanation {
-    display: inline-block;
+  .lesson1 .lesson-material h4 {
+    font-size: 1.2rem;
+    padding: 0 2%;
+    margin: 2vh 0;
   }
-  .quiz {
+  .lesson1 .lesson-material img {
+    max-width: 100%;
+    max-height: 30vh;
+    object-fit: contain;
+    margin: 1vh 0;
+  }
+  .lesson1 .lesson-material details summary {
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-decoration: underline;
+    margin: 1vh 0 0 0;
+  }
+  .lesson1 .lesson-material details h3 {
+    position: relative;
+    left: -21vw;
+    margin: 2vh 0 1vh 0;
+  }
+  .lesson1 .quiz {
     display: flex;
     flex-direction: column;
-    background-color: rgba(165, 165, 165, 0.5);
-    height: 97vh;
-    box-sizing: border-box;
+    background-color: rgba(5, 2, 12, 0.2);
   }
-  .quiz div {
-    display: flex;
-    flex-direction: column;
+  .lesson1 .quiz .q1 label {
+    background-color: rgba(50, 50, 50, 0.2);
+    box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.7);
+    margin: 2vh 3vw;
+    font-size: 0.85rem;
   }
-  .quiz div label {
-    box-sizing: border-box;
-    padding: 1.52% 4vw;
+  .lesson1 .quiz .q2 label {
+    background-color: rgba(50, 50, 50, 0.2);
+    box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.7);
+    margin: 2vh 3vw;
+    font-size: 0.85rem;
   }
-  .quiz div h2 {
+  .lesson1 .quiz .q3 label {
+    background-color: rgba(50, 50, 50, 0.2);
+    box-shadow: 2px 2px 5px 2px rgba(20, 20, 20, 0.7);
+    margin: 2vh 3vw;
+    font-size: 0.85rem;
+  }
+  .lesson1 .quiz .q-name {
+    width: 90%;
+    background-color: rgba(50, 50, 50, 0.2);
     text-align: center;
+    margin: 2vh 1vw 2vh 2vw;
+    border: 1px solid rgba(130, 130, 130, 0.3);
+  }
+  .lesson1 .quiz .q3 #lastquestion {
+    margin: 2vh 3vw 5vh 3vw;
+  }
+  .lesson1 .quiz .done {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0vh 0vw 3vh 0vw;
+    text-decoration: underline;
+    color: blue;
+  }
+  .lesson1 .quiz .done .retry {
+    color: blue;
+    width: 20%;
+    letter-spacing: 0.05rem;
+    margin: 0 5vw 0vh 40vw;
+  }
+  .lesson1 .quiz .done .finish {
+    color: blue;
+    width: 20%;
+    letter-spacing: 0.05rem;
+    margin: 0vh 10vw 0vh 0vw;
   }
 }
-
-
-
