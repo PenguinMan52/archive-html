@@ -5,18 +5,18 @@
     <!-- All of this is Internal CSS and is only used to tell the browser how to render your file -->
     <meta charset="UTF-8">
     <!-- Makes this site responsive on phones -->
-    <meta name="viewport" content="width=800px", initial-scale="1.0", >
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
     <!-- Page title (shows in browser tab) -->
     <title>Archive HTML</title>
     <!-- Optional description for search engines -->
     <meta name="description" content="Introduction to HTML as a web markup language. We will explain how to style documents with CSS in coming lesson plans.">
     <!-- Link to external CSS -->
-    <link rel="stylesheet" href="./htmlintro1.css">
+    <link rel="stylesheet" href="htmlintro1.css">
   </head>
   <!-- Everything inside the body tag is rendered content -->
   <body>
     <!-- Main is used to contain "What is this page for?" Typically most content lives here. -->
-    <main>
+    <main class="lesson1">
       <!-- Main purpose does not mean only content. It can be broken into sections, or an article with 1-2 additional sections (in that case the sections should rely on the article to make sense/exist). -->
       <section class="lesson-material">
         <h1 class="intro">What is HTML?</h1>
@@ -36,12 +36,12 @@
           </ul>
         </div>
         <p class="theory-explanation">Sounds like a lot right? We're gonna make this simple by starting from structure down. To begin with, I'm going to explain what exactly we're doing here and how to get started.</p>
-        <p>Before learning the language, you need to know that web pages are just files talking to files (yes, i mean the files you already look at on your computer every day). Even this lesson plan is just a folder of files:</p>
-        <img src="./Filesarefiles.png" alt="A picture of file explorer on the desktop.">
+        <p class="theory-explanation">Before learning the language, you need to know that web pages are just files talking to files (yes, i mean the files you already look at on your computer every day). Even this lesson plan is just a folder of files:</p>
+        <img src="./Filesarefiles.png">
         <details>
           <summary>Learn how to open an html document</summary>
           <h3>What is an IDE</h3>
-          <p>Before learning the language, you should first know how to install the tools you need. Later we will revisit tools at the end but for now I ask that you install VS Code (Visual Studio Code) as outlined in lesson 2 to have your own IDE (Integrated Development Environment). It's here where you'll be able to follow along the lessons and eventually experiment on your own.</p>
+          <p class="theory-explanation">Before learning the language, you should first know how to install the tools you need. Later we will revisit tools at the end but for now I ask that you install VS Code (Visual Studio Code) as outlined in lesson 2 to have your own IDE (Integrated Development Environment). It's here where you'll be able to follow along the lessons and eventually experiment on your own.</p>
         </details>
       </section>
       <section class="quiz">
@@ -97,23 +97,16 @@
             <input type="radio" name="q3" value="c">
             The structure of documents
           </label>
-          <label>
+          <label id="lastquestion">
             <input type="radio" name="q3" value="d">
             How to install an IDE
           </label>
         </div>
         <div class="done">
           <button type="button" class="retry">Retry</button>
-          <button type="button" class="finished">Finish</button>
+          <button type="button" class="finish">Finish</button>
         </div>
       </section>
     </main>
   </body>
-
 </html>
-
-
-
-
-
-
